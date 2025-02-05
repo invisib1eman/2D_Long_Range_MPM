@@ -114,12 +114,14 @@ def neighbor_list(position, box):
                             neighbor_i.append([j,x_shift,y_shift])
         neighbor_list.append(neighbor_i)
     return neighbor_list
+def save_dipoles():
+    
 def __main__():
     position = np.array([[0,0,0],[0,0,1],[0,0,2]])
     box = np.array([1,1,0])
     k = np.array([0,0,0.01])
     alpha = 1
     dipole_moment = Dipole_model(position, alpha, box, k)
-    print(dipole_moment)
+
 if __name__ == "__main__":
     __main__()
