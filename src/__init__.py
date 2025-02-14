@@ -9,7 +9,7 @@ __version__ = '0.1.0'
 
 # Import main functionality
 try:
-    from model import *
+    from mean_field_model import *
     from .utils import *
 except ImportError as e:
     print(f"Warning: Could not import all modules - {e}")
